@@ -71,14 +71,14 @@ public class UserDAOImplementation implements UserDAO {
 	  				PreparedStatement ps = conn.prepareStatement(query);
   				ps.setString(1, user.getEmail());
 	  				ps.setString(2, user.getPassword());
-	  
+	  				
+	  				
 	  				ResultSet rs = ps.executeQuery();
 	  				boolean more = rs.next();
 	  				
 	  				if(more){
 	  					user.setEmail(rs.getString("email"));
 	  					user.setPassword(rs.getString("password"));
-	  					
 	  					user.setValid(true);
 	  				
 	  				}

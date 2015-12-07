@@ -7,12 +7,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h>Home</h> 
 
 <a href=Home.jsp">
 <img src="logo/logo.JPG" style="width:100px;height:100px;">
 </a>
 
+<form>
+  Search GuestMe:
+  <a href="Searchpage.jsp"> Search</a>
+</form>
+
+<br>
+<h>Home</h> 
 <br>
 Welcome 
 
@@ -20,7 +26,7 @@ Welcome
 <br>
 
 
-<a href="displayAd.jsp"> View Ads</a>
+<a href="displayAd.jsp"> View All Ads</a>
 
 
 

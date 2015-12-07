@@ -19,7 +19,7 @@
         <fieldset>
         
             <div>
-                <label for="firstName">Email</label> <input type="email"
+                <label for="email">Email</label> <input type="email"
                     name="email" value="<c:out value="${user.email}" />"
                      />
             </div>

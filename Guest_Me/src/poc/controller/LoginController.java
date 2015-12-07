@@ -33,7 +33,7 @@ public class LoginController extends HttpServlet {
 		user.setEmail(request.getParameter("email"));
 		user.setPassword(request.getParameter("password"));
 		
-		
+
 		
 		dao.login(user);
 		
@@ -41,7 +41,8 @@ public class LoginController extends HttpServlet {
 		if(user.isValid()) {
 				
 			
-			 HttpSession session = request.getSession();	    
+			 HttpSession session = request.getSession();
+			 
 	           
 		 dispatch = request.getRequestDispatcher(Home);
 		}
