@@ -9,43 +9,40 @@
 <title>Adlist</title>
 </head>
 <body>
-
-<form action="AdlistController.do" method="post">
-        <fieldset>
-     
-        
-        <div>
-                <label for="pic">Picture</label> <input type="file" 
-                    name="pic" accept="image/*" value="<c:out value="${adlist.pic}" />"
-                     />
-            </div>
-            <div>
-                <label for="descr">Description</label> <input type="text"
-                    name="descr" value="<c:out value="${adlist.descr}" />"
-                     />
-            </div>
-        
-            <div>
-                <label for="location">Location</label> <input type="text"
-                    name="location" value="<c:out value="${adlist.location}" />"
-                     />
-            </div>
-            
-            <div>
-                <label for="price">Price</label> <input type="text"
-                    name="price" value="<c:out value="${adlist.price}" />"
-                     />
-            </div>
-            
-            
-           
-            <div>
-                <input type="submit" value="Submit" />
-            </div>
-        </fieldset>
-    </form>
-
-
-
+	<center>
+		<h1>AdList</h1>
+		<form method="post" action="AdListServlet" enctype="multipart/form-data">
+			<table border="0">
+				
+				<tr>
+					<td>Description: </td>
+					<td><input type="text" name="descr" size="50"/></td>
+				</tr>
+				<tr>
+					<td>Location: </td>
+					<td><input type="text" name="location" size="50"/></td>
+				</tr>
+				
+				<tr>
+					<td>Price: </td>
+					<td><input type="text" name="price" size="50"/></td>
+				</tr>
+				
+				<tr>
+					<td>Rooms: </td>
+					<td><input type="text" name="rooms" size="50"/></td>
+				</tr>
+				<tr>
+					<td>Photo: </td>
+					<td><input type="file" name="pic" size="50"/></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="Save">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</center>
 </body>
 </html>

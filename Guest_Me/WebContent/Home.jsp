@@ -20,9 +20,9 @@
 <br>
 <h>Home</h> 
 <br>
-Welcome 
-
 <br>
+<h2>Welcome <font color="red"> <%= session.getAttribute("user") %>
+</font> </h1> 
 <br>
 
 

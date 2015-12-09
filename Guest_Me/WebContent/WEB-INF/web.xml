@@ -34,4 +34,24 @@
     <servlet-name>AdlistController</servlet-name>
     <url-pattern>/AdlistController.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AdListServlet</display-name>
+    <servlet-name>AdListServlet</servlet-name>
+    <servlet-class>poc.controller.AdListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdListServlet</servlet-name>
+    <url-pattern>/AdListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SearchController</display-name>
+    <servlet-name>SearchController</servlet-name>
+    <servlet-class>poc.controller.SearchController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchController</servlet-name>
+    <url-pattern>/SearchController</url-pattern>
+  </servlet-mapping>
 </web-app>

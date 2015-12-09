@@ -27,23 +27,27 @@ Statement stmt= conn.createStatement();
 
 <table border='2' style="width:50%">
  <tr> 
- <td><b> Pic </b></td>
+
  <td> <b>Descr </b></td>
  <td><b> Location </b></td>
  <td> <b>Price </b></td>
- 
+  <td> <b>Rooms </b></td>
+ <td><b> Pic </b></td> 
  
  </tr>
  
 
  <% while(rs.next()){ %>
             <TR>
-                <TD> <%= rs.getString("pic") %></TD>
+               
                 <TD> <%= rs.getString("descr") %></TD>
                  <TD> <%= rs.getString("location") %></TD>
                 <TD> <%= rs.getString("price") %></TD>
-               
-                
+                 <TD> <%= rs.getString("rooms") %></TD>
+                <TD> <%= rs.getBlob("pic") %></TD>
+
+
+				               
                 
 
             </TR>

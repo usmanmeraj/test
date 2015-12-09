@@ -27,6 +27,7 @@ public class UserDAOImplementation implements UserDAO {
 	            preparedStatement.setString( 2, user.getLastname() );
 	            preparedStatement.setString( 3, user.getEmail() );
 	            preparedStatement.setString( 4, user.getDob() );
+	            
 	            preparedStatement.setString( 5, user.getPassword() );
 	            
 	            
@@ -71,7 +72,6 @@ public class UserDAOImplementation implements UserDAO {
 	  				PreparedStatement ps = conn.prepareStatement(query);
   				ps.setString(1, user.getEmail());
 	  				ps.setString(2, user.getPassword());
-	  				
 	  				
 	  				ResultSet rs = ps.executeQuery();
 	  				boolean more = rs.next();

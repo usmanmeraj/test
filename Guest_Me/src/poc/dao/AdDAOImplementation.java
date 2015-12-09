@@ -28,6 +28,7 @@ public class AdDAOImplementation implements AdDAO {
 	public void addList(AdlistModel adlist) {
 		
 		
+		
 		 try {
 	            String query = "insert into gm_adlist (pic, descr, location, price) values (?,?,?,?)";
 	            PreparedStatement preparedStatement = conn.prepareStatement( query );
