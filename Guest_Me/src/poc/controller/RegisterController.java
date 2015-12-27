@@ -22,7 +22,7 @@ public class RegisterController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	private UserDAO dao;
-    public static final String Index = "/index.jsp";
+    public static final String Index = "/index.html";
    
 
 			

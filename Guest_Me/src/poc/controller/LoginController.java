@@ -47,7 +47,7 @@ public class LoginController extends HttpServlet {
 
 		
 		dao.login(user);
-	
+	request.setAttribute("user", user);
 		if(user.isValid()) {
 				
 			Connection conn = UserUtil.getConnection();
@@ -73,7 +73,7 @@ public class LoginController extends HttpServlet {
 			System.out.println(rs.getString("userid"));
 			
 			
-			 session.setAttribute("user", rs.getString("firstname"));
+			 session.setAttribute("username", rs.getString("firstname"));
 			System.out.println("Session id: " + session.getId());
 		 dispatch = request.getRequestDispatcher(Home);
 			}

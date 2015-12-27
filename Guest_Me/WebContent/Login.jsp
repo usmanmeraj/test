@@ -1,39 +1,57 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Login</title>
-</head>
-<body>
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Log-in</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
 
-<a href="index.jsp">
-<img src="logo/logo.JPG" style="width:100px;height:100px;">
-</a>
+        <link rel="stylesheet" href="bootstrap/css/style.css">
 
+    
+    
+    
+  </head>
 
+  <body>
 
-<form action="LoginController.do" method="post">
-        <fieldset>
-        
-            <div>
-                <label for="email">Email</label> <input type="email"
-                    name="email" value="<c:out value="${user.email}" />"
+    <div class="login-card">
+    <h1>Log-in</h1><br>
+  <form action="LoginController.do" method="post">
+     <input type="email"
+                    name="email" placeholder ="Email" value="<c:out value="${user.email}" />"
+                    />
+    <input type="password"
+                    name="password" placeholder = "Password" value="<c:out value="${user.password}" />"
                      />
-            </div>
-            <div>
-                <label for="password">Password</label> <input type="password"
-                    name="password" value="<c:out value="${user.password}" />"
-                     />
-            </div>
-            <div>
-                <input type="submit" value="Submit" />
-            </div>
-        </fieldset>
-    </form>
+    <input type="submit" name="login" class="login login-submit" value="login">
+  </form>
+    
+  <div class="login-help">
+    <a href="Register.jsp">Register</a>
+  </div>
+<div class="about">
+   
+    <p class="about-author">
+      &copy; 2015 -
+      GuestMe License<br>
+    </p>
+  </div>
 
+</div>
 
-</body>
+<!-- <div id="error"><img src="https://dl.dropboxusercontent.com/u/23299152/Delete-icon.png" /> Your caps-lock is on.</div> -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+
+    
+    
+    
+    
+  </body>
 </html>
